@@ -4,15 +4,15 @@
 # https://aka.ms/yaml
 
 trigger:
- - main
+- main
 
- pool:
+pool:
    vmImage: 'ubuntu-latest' 
 
- variables:
+variables:
    imageName: 'pipelines-javascript-docker'
 
- steps:
+steps:
  - task: Docker@2
    displayName: Build an image
    inputs:
